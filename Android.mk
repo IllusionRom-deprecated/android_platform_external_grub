@@ -31,6 +31,7 @@ LOCAL_CFLAGS := \
         -Wpointer-arith -falign-jumps=1 -falign-loops=1 \
         -falign-functions=1 -Wundef
 LOCAL_CFLAGS += -m32 -O2 -fno-builtin -nostdinc -fno-reorder-functions -fno-stack-protector
+LOCAL_ASFLAGS += -m32
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/stage1
 
@@ -88,6 +89,7 @@ LOCAL_CFLAGS := \
 	-falign-functions=1 -Wundef
 
 LOCAL_CFLAGS += -m32 -Os -fno-builtin -nostdinc -fno-reorder-functions -fno-stack-protector
+LOCAL_ASFLAGS += -m32
 
 LOCAL_CFLAGS += -DHAVE_CONFIG_H -DFSYS_EXT2FS=1 -DSUPPORT_SERIAL=1
 
@@ -125,6 +127,7 @@ LOCAL_CFLAGS := \
 	-falign-functions=1 -Wundef
 
 LOCAL_CFLAGS += -m32 -Os -fno-builtin -nostdinc -fno-reorder-functions -fno-stack-protector
+LOCAL_ASFLAGS += -m32
 
 LOCAL_CFLAGS += -DHAVE_CONFIG_H -DFSYS_EXT2FS=1 -DSUPPORT_SERIAL=1
 
